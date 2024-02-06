@@ -92,6 +92,20 @@ img {
     height: 100%;
 }
 
+#headshot {
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #958456;
+}
+
+.externalProfiles {
+    padding: 20px;
+    background-color: #958456;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
 .externalProfiles a {
     background-color: #bdb08c;
     padding: 10px;
