@@ -11,50 +11,59 @@
   </head>
   <body>
     <main>
-        <div class="topText">
+        <div class="header">
           <h1>Nathan Santiago</h1>
-          <a href="https://www.linkedin.com/in/nathan-santiago/">LinkedIn</a>
-          <a href="https://github.com/nathansantiago/">GitHub</a>
+          <img src="./seniorPicture.jpeg" style="width: 25%;" alt="Photo of Nathan Santiago">
+          <div class="externalProfiles">
+            <a href="https://www.linkedin.com/in/nathan-santiago/"><img src="https://favicon.twenty.com/linkedin.com">LinkedIn</a>
+            <a href="https://github.com/nathansantiago/"><img src="https://favicon.twenty.com/github.com">GitHub</a>
+          </div>
+        </div>
+        <div class="aboutMe">
+          <h1>About Me</h1>
           <p>Computer Science student at University of North Carolina at Chapel Hill.</p>
         </div>
-        <div class="gallery">
-          <!-- Inidividual slide creation. -->
-          <a href="https://devpost.com/software/agricultural-water-usage-calculator">
-            <div class="slide">
-              <div class="numberSlide">1 / 2</div>
-              <img src="Agricultural Water Usage Calculator.png" style="width:100%">
+        <div class="projects">
+          <h1>Projects</h1>
+          <div class="gallery">
+            <!-- Inidividual slide creation. -->
+            <a href="https://devpost.com/software/agricultural-water-usage-calculator">
+              <div class="slide">
+                <div class="numberSlide">1 / 2</div>
+                <img src="Agricultural Water Usage Calculator.png" style="width:100%">
+              </div>
+            </a>
+
+            <a href="https://devpost.com/software/game-sales-for-publishers?ref_content=user-portfolio&ref_feature=in_progress">
+              <div class="slide">
+                <div class="numberSlide">2 / 2</div>
+                <img src="Game Sales for Publishers.jpg" style="width:100%">
+              </div>
+            </a>
+
+            <!-- Buttons -->
+            <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+            <a class="next" onclick="nextSlide(1)">&#10095;</a>
+
+            <!-- Captions -->
+            <div class="caption-container">
+              <p id="caption"></p>
             </div>
-          </a>
 
-          <a href="https://devpost.com/software/game-sales-for-publishers?ref_content=user-portfolio&ref_feature=in_progress">
-            <div class="slide">
-              <div class="numberSlide">2 / 2</div>
-              <img src="Game Sales for Publishers.jpg" style="width:100%">
+            <!-- Thumbnails -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="Agricultural Water Usage Calculator.png" style="width:100%" onclick="currentSlide(1)" alt="agricultural-water-usage-calculator">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Game Sales for Publishers.jpg" style="width:100%" onclick="currentSlide(2)" alt="game-sales-for-publishers">
+              </div>
             </div>
-          </a>
 
-          <!-- Buttons -->
-          <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
-          <a class="next" onclick="nextSlide(1)">&#10095;</a>
-
-          <!-- Captions -->
-          <div class="caption-container">
-            <p id="caption"></p>
+            <script>
+              showSlides(1); // Displays first slide when website loads.
+            </script>
           </div>
-
-          <!-- Thumbnails -->
-          <div class="row">
-            <div class="column">
-              <img class="demo cursor" src="Agricultural Water Usage Calculator.png" style="width:100%" onclick="currentSlide(1)" alt="agricultural-water-usage-calculator">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="Game Sales for Publishers.jpg" style="width:100%" onclick="currentSlide(2)" alt="game-sales-for-publishers">
-            </div>
-          </div>
-
-          <script>
-            showSlides(1); // Displays first slide when website loads.
-          </script>
         </div>
     </main>
   </body>

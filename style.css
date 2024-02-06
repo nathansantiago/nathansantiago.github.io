@@ -1,7 +1,9 @@
 body {
-    background-color: #fefefd;
+    background-color: #f0ede5;
     font-family: 'Open Sans';
-    margin: 0;
+    margin: 0px;
+    height: 100%;
+    padding: 0px;
 }
 
 * {
@@ -33,7 +35,7 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+    color: #fcfbfa;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -47,11 +49,11 @@ img {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(149, 132, 86, .8);
 }
 
 .numberSlide {
-    color: #f2f2f2;
+    color: #fcfbfa;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -60,9 +62,9 @@ img {
 
 .caption-container {
     text-align: center;
-    background-color: #222;
+    background-color: #958456;
     padding: 2px 16px;
-    color: white;
+    color: #fcfbfa;
 }
 
 .row:after {
@@ -84,6 +86,38 @@ img {
     opacity: 1;
 }
 
-.topText {
+.header {
+    padding: 50px;
+    text-align: center;
+    height: 100%;
+}
+
+.externalProfiles a {
+    background-color: #bdb08c;
+    padding: 10px;
+    border-radius: 10px;
+    color: #f0ede5;
+    text-decoration: none;
+}
+
+.externalProfiles img {
+    width: 32px;
+    padding-right: 5px;
+}
+
+.aboutMe {
+    padding: 50px;
+    text-align: center;
+    height: 100%;
+    background-color: #dfd9c7;
+}
+
+.projects {
+    padding: 50px;
+    height: 100%;
+    background-color: #cec4aa;
+}
+
+.projects h1 {
     text-align: center;
 }
