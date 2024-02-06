@@ -5,27 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nathan Santiago</title>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <main>
-        <h1>Nathan Santiago</h1>
-        <ul>
+        <div style="text-align: center;">
+          <h1>Nathan Santiago</h1>
           <a href="https://www.linkedin.com/in/nathan-santiago/">LinkedIn</a>
           <a href="https://github.com/nathansantiago/">GitHub</a>
-        </ul>
-        <p>Computer Science student at University of North Carolina at Chapel Hill.</p>
-        <div class="gallery">
-          <a href="https://devpost.com/software/agricultural-water-usage-calculator">
-            <img src="./Agricultural Water Usage Calculator.png" alt="agricultural-water-usage-calculator" width="350" height="200">
-          </a>
-          <div class="imageDescription">HackNC 2023 Project</div>
+          <p>Computer Science student at University of North Carolina at Chapel Hill.</p>
         </div>
         <div class="gallery">
-          <a href="https://devpost.com/software/game-sales-for-publishers?ref_content=user-portfolio&ref_feature=in_progress">
-            <img src="./Game Sales for Publishers.jpg" alt="game-sales-for-publishers" width="350" height="200">
+          <!-- Inidividual slide creation. -->
+          <a href="https://devpost.com/software/agricultural-water-usage-calculator">
+            <div class="slide">
+              <div class="numberSlide">1 / 2</div>
+              <img src="Agricultural Water Usage Calculator.png" style="width:100%">
+            </div>
           </a>
-          <div class="imageDescription">Carolina Data Challenge 2023 Project</div>
+
+          <a href="https://devpost.com/software/game-sales-for-publishers?ref_content=user-portfolio&ref_feature=in_progress">
+            <div class="slide">
+              <div class="numberSlide">2 / 2</div>
+              <img src="Game Sales for Publishers.jpg" style="width:100%">
+            </div>
+          </a>
+
+          <!-- Buttons -->
+          <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+          <a class="next" onclick="nextSlide(1)">&#10095;</a>
+
+          <!-- Captions -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnails -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="Agricultural Water Usage Calculator.png" style="width:100%" onclick="currentSlide(1)" alt="agricultural-water-usage-calculator">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="Game Sales for Publishers.jpg" style="width:100%" onclick="currentSlide(2)" alt="game-sales-for-publishers">
+            </div>
+          </div>
+
+          <script>
+            showSlides(1); // Displays first slide when website loads.
+          </script>
         </div>
     </main>
   </body>
