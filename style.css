@@ -83,3 +83,7 @@ img {
 .active, .demo:hover {
     opacity: 1;
 }
+
+.topText {
+    text-align: center;
+}
